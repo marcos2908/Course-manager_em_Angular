@@ -14,16 +14,16 @@ import { CourseListComponent } from "./course-list.component";
         CourseInfoComponent
     ],
     imports:[
+        AppPipeModule,
         CommonModule,
         FormsModule,
-        AppPipeModule,
         StarModule,
         RouterModule.forChild([
             {
                 path: 'courses', component: CourseListComponent
             },
             {
-                path: 'courses/info:id', component: CourseInfoComponent
+                path: 'courses/info/:id', component: CourseInfoComponent
             }
         ])
     ],
