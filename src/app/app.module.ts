@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -16,6 +17,7 @@ import { Error404Component } from './core/component/error-404/error-404.componen
     BrowserModule,
     CoreModule,
     CourseModule,
+    HttpClientModule,
     RouterModule.forRoot([{
       //Rota padrão do Angular 
       path: '', redirectTo: 'courses', pathMatch: 'full'
